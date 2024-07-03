@@ -9,7 +9,7 @@ const useSettingsPanelForm = () => {
   const settingsPanelFormVisible = selectedNodes.length === 1 ? true : false
 
   // if settingsPanelFormVisible is not visible we won't need any data
-  if (settingsPanelFormVisible === false) return {}
+  if (settingsPanelFormVisible === false) return { settingsPanelFormVisible }
 
   // details of the selected node
   const selectedNodeDetails = selectedNodes[0]
